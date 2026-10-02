@@ -303,7 +303,7 @@ class DetailActivity : AppCompatActivity() {
             tvBio.visibility = View.VISIBLE
         }
 
-        val tmdbApiKey = "3a9352e90da3de0d31bf12c4c5e6b2e8"
+        val tmdbApiKey = "GANTI DENGAN TMDB API KEY ANDA"
 
         // LANGKAH 1: Ambil Biografi Bahasa Indonesia
         TmdbApiClient.instance.getPersonDetail(personId, tmdbApiKey, "id-ID").enqueue(object : Callback<JsonObject> {
