@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_all"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Semua Film" />
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:title="Movies" />
+    <item
+        android:id="@+id/nav_series"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Series" />
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_changelog"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Changelog" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="About" />
+        </menu>
+    </item>
+</menu>

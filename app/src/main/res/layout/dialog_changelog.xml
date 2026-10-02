@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A1A1A"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changelog"
+        android:textColor="#E50914"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v1.2.0\n• Pemindahan filter Kategori (Movies &amp; Series) ke dalam Nav Drawer\n• Pembersihan halaman utama dari tombol filter\n• Pembaruan Versi Aplikasi ke 1.2.0\n\nv1.1.1\n• Penambahan fitur Swipe to Refresh pada halaman utama\n• Perubahan pesan error koneksi menjadi &quot;Tidak dapat terhubung ke jaringan&quot;\n• Penambahan tombol Tutup pada dialog Changelog\n• Pembaruan Versi Aplikasi ke 1.1.1\n\nv1.1.0\n• Penambahan Copyright di Nav Drawer &amp; About\n• Pembaruan Versi Aplikasi ke 1.1.0\n• Peningkatan Stabilitas Aplikasi\n\nv1.0.0 (Bulan ini)\n• Rilis awal Aplikasi Android\n• Integrasi Video Player &amp; Opsi Resolusi\n• Dukungan Season dan Episode Series\n• Auto-translate Biografi Pemeran (TMDB)\n• Desain UI Premium Dark Mode\n• Live Search Filter"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:lineSpacingExtra="6dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#E50914"
+        android:text="Tutup"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

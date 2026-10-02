@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1A1A1A"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Streaming"
+        android:textColor="#E50914"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Versi 1.2.0"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Sebuah web streaming untuk menonton berbagai pilihan film dan serial, yang dilengkapi dengan fitur pencarian judul, pembagian kategori genre, serta tampilan sorotan utama interaktif untuk memutar atau melihat informasi film secara langsung dari halaman beranda."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:lineSpacingExtra="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Copyright © Xperience Xylograph 2026"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp" />
+</LinearLayout>

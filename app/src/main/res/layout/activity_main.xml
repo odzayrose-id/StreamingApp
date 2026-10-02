@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#141414">
+
+    <!-- KONTEN UTAMA APLIKASI (BERANDA) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header App -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="12dp">
+
+            <!-- Tombol Hamburger Menu -->
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_menu_hamburger" />
+
+            <TextView
+                android:id="@+id/tvAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/btnMenu"
+                android:text="STREAMING"
+                android:textColor="#E50914"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Kolom Pencarian -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:iconifiedByDefault="true"
+                app:queryHint="Cari film..." />
+        </RelativeLayout>
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="20dp" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <!-- MENU NAVIGASI SAMPING -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1A1A1A"
+        android:orientation="vertical">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:itemTextColor="#FFFFFF"
+            app:itemIconTint="#FFFFFF"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Copyright © Xperience Xylograph 2026"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
